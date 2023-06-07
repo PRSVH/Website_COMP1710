@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en-au">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link href="feedback.css" rel="stylesheet" title="default">
+    <link href="altcss.css" rel="alternate stylesheet" title="alternate">
+    <script src="/scripts/styleswitcher.js"></script>
+</head>
+
+    <body>
+    
+        <script>
+
+                var style_cookie_name = "style" ;
+                var style_cookie_duration = 30 ;
+                var style_domain = "thesitewizard.com" ;
+
+                function switch_style ( css_title )
+                    {
+                // You may use this script on your site free of charge provided
+                // you do not remove this notice or the URL below. Script from
+                // https://www.thesitewizard.com/javascripts/change-style-sheets.shtml
+                var i, link_tag ;
+                for (i = 0, link_tag = document.getElementsByTagName("link") ;
+                     i < link_tag.length ; i++ ) {
+                        if ((link_tag[i].rel.indexOf( "stylesheet" ) != -1) &&
+                            link_tag[i].title) {
+                                 link_tag[i].disabled = true ;
+                        if (link_tag[i].title == css_title) {
+                            link_tag[i].disabled = false ;
+                         }
+                }
+                set_cookie( style_cookie_name, css_title,
+                style_cookie_duration, style_domain );
+                }
+                }
+                function set_style_from_cookie()
+                {
+                    var css_title = get_cookie( style_cookie_name );
+                    if (css_title.length) {
+                        switch_style( css_title );
+                    }
+                }
+                function set_cookie ( cookie_name, cookie_value,
+                    lifespan_in_days, valid_domain )
+                {
+                    // https://www.thesitewizard.com/javascripts/cookies.shtml
+                    var domain_string = valid_domain ?
+                       ("; domain=" + valid_domain) : '' ;
+                        document.cookie = cookie_name +
+                       "=" + encodeURIComponent( cookie_value ) +
+                       "; max-age=" + 60 * 60 *
+                       24 * lifespan_in_days +
+                       "; path=/" + domain_string ;
+                    }
+                function get_cookie ( cookie_name )
+                {
+                // https://www.thesitewizard.com/javascripts/cookies.shtml
+	            var cookie_string = document.cookie ;
+	            if (cookie_string.length != 0) {
+		        var cookie_array = cookie_string.split( '; ' );
+		        for (i = 0 ; i < cookie_array.length ; i++) {
+			        cookie_value = cookie_array[i].match ( cookie_name + '=(.*)' );
+			        if (cookie_value != null) {
+				return decodeURIComponent ( cookie_value[1] ) ;
+			    }
+		    }
+	    }
+	    return '' ;
+        }
+
+        </script>
+
+
+        <button type="button" onclick="switch_style('default');return false;" name="theme" value="Default" id="defaultcss">Default</button>
+        <button type="button" onclick="switch_style('alternate');return false;" name="theme" value="alternate" id="alternatecss">Alternate</button>
+        
+        <form action="mailto:u7522927@anu.edu.au" method="post" enctype="text/plain">
+            Your Name:
+            <input class="text" type="text" name="Name"><br>
+    
+            Your Email:
+            <input class="text" type="email" name="Email"><br>
+    
+            Gender:<br>
+            <input class="radio" type="radio" id="Male" name="Gender" value="Male">
+            <label for="Male">Male</label><br>
+    
+            <input class="radio" type="radio" id="Female" name="Gender" value="Female">
+            <label for="Female">Female</label><br>
+    
+            <input class="radio" type="radio" id="Other" name="Gender" value="Other">
+            <label for="Other">Other</label><br>
+    
+            <input class="radio" type="radio" id="Iprefernottosay" name="Gender" value="I prefer not to say">
+            <label for="Iprefernottosay">I prefer not to say</label><br><br>
+    
+        
+            Please fill in your feedback:<br>
+            <textarea id="feedback" name="feedback" rows="6" cols="60" ></textarea>
+            <br><br>
+            <input class="button1" type="reset" value="Clear">
+            <input class="button2" type="submit" value="Send it">
+            
+        </form>
+    </body>
+    </html>

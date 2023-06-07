@@ -1,0 +1,25 @@
+/* Set images size */
+
+img.validation {
+    width: 30em;
+}
+
+/* Column padding */
+.column {
+    float: left;
+    width: 50%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+body{
+    background-color: rgb(52, 50, 50);
+}
+h2{
+    color: aliceblue;
+}

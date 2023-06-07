@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en-au">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music</title>
+    <link rel="stylesheet" href="Music.css">
+
+</head>
+
+
+
+<article class="screen">
+    <input type="checkbox" value="None" id="magicButton" name="check">
+    <label class="main" for="magicButton"></label>
+  
+    <div class="coverImage"></div>
+    <div class="search"></div>
+    <div class="bodyPlayer"></div>
+
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+    
+       <table class="list">
+        <tbody>
+                          <tr class="song">
+                          <td class="nr">1</td>
+                          <td class="title">Someone to Stay</td>
+                          <td class="length">4:14</td>
+                          <td> </td>
+
+                          <td>
+                            <audio 
+                               src="Audio/Vancouver-Sleep-Clinic-Someone-To-Stay.mp3" id="Song">
+                            </audio></td>
+
+                          <td> 
+                            <button id="myBtn"><span><i class="fa fa-play fa-1x" style="color:rgb(71,7, 7)"></i></span></button>
+                            <script>  document.getElementById("myBtn").addEventListener("click",function(){
+                           document.getElementById("Song").play();
+                           }
+                           );
+                          </script></td>
+                          <td><button id="myBtnpause"><span><i class="fa fa-pause fa-1x" style="color:rgb(71, 7, 7)"></i></span></button>
+                          <script>  document.getElementById("myBtnpause").addEventListener("click",function(){
+                          document.getElementById("Song").pause();
+                          }
+                          );
+                         </script>
+                          
+                        </td>
+                      </tr>
+                  
+
+                      <tr class="song">
+                          <td class="nr">2</td>
+                          <td class="title">Endlessly</td>
+                          <td class="length">3:58</td>
+                          <td> </td>
+
+                          <td>
+                          <audio src="Audio/v0_10069083477_1_1.mp3" id="Song2"></audio></td>
+                          <td><button id="myBtnplay"><span><i class="fa fa-play fa-1x" style="color:rgb(71,7, 7)"></i></span></button>
+                           <script>  document.getElementById("myBtnplay").addEventListener("click",function(){
+                           document.getElementById("Song2").play();
+                           }
+                           );
+                          </script>
+                          </td>
+                          <td>
+                          <button id="myBtnpause1"><span><i class="fa fa-pause fa-1x" style="color:rgb(71, 7, 7)"></i></span></button>
+                          <script>  document.getElementById("myBtnpause1").addEventListener("click",function(){
+                          document.getElementById("Song2").pause();
+                          }
+                          );
+                         </script>
+                          </td>
+                      </tr>
+                  
+                      <tr class="song">
+                          <td class="nr">3</td>
+                          <td class="title">Enchanted</td>
+                          <td class="length">5:53</td>
+                          <td> </td>
+                          <td>
+                           <audio 
+                             src="Audio/Taylor+Swift+Enchanted+Lyrics.mp3" id="Song3">
+                            </audio>
+                          </td>
+                          <td>
+                          <button id="myBtnplay1"><span><i class="fa fa-play fa-1x" style="color:rgb(71,7, 7)"></i></span></button>
+                           <script>  document.getElementById("myBtnplay1").addEventListener("click",function(){
+                           document.getElementById("Song3").play();
+                           }
+                           );
+                          </script>
+                          </td>
+                          <td>
+                          <button id="myBtnpause2"><span><i class="fa fa-pause fa-1x" style="color:rgb(71, 7, 7)"></i></span></button>
+                          <script>  document.getElementById("myBtnpause2").addEventListener("click",function(){
+                          document.getElementById("Song3").pause();
+                          }
+                          );
+                         </script>
+                        </td>
+                      </tr>
+                  
+                      <tr class="song">
+                          <td class="nr">4</td>
+                          <td class="title">Dandelions</td>
+                          <td class="length">3:54</td>
+                          <td> </td>
+                          <td>
+                            <audio  src="Audio/Ruth-B.-Dandelions-Luvmp.com_.mp3" id = "Song4">
+                            </audio></td>
+                           <td> <button id="myBtnplay2"><span><i class="fa fa-play fa-1x" style="color:rgb(71,7, 7)"></i></span></button>
+                           <script>  document.getElementById("myBtnplay2").addEventListener("click",function(){
+                           document.getElementById("Song4").play();
+                           }
+                           );
+                          </script>
+                          </td>
+                          <td>
+                          <button id="myBtnpause3"><span><i class="fa fa-pause fa-1x" style="color:rgb(71, 7, 7)"></i></span></button>
+                          <script>  document.getElementById("myBtnpause3").addEventListener("click",function(){
+                          document.getElementById("Song4").pause();
+                          }
+                          );
+                         </script>
+                        </td>
+                      </tr>
+                      
+                      <tr class="song">
+                          <td class="nr">5</td>
+                          <td class="title">Yellow</td>
+                          <td class="length">4:27</td>
+                          <td> </td>
+                          <td>
+                            <audio  src="Audio/Coldplay_-_Yellow_(ColdMP3.com).mp3" id="Song5">
+                            </audio>
+                          </td>
+                          <td>
+                            <button id="myBtnplay3"><span><i class="fa fa-play fa-1x" style="color:rgb(71,7, 7)"></i></span></button>
+                           <script>  document.getElementById("myBtnplay3").addEventListener("click",function(){
+                           document.getElementById("Song5").play();
+                           }
+                           );
+                          </script>
+                          </td>
+                          <td>
+                          <button id="myBtnpause4"><span><i class="fa fa-pause fa-1x" style="color:rgb(71, 7, 7)"></i></span></button>
+                          <script>  document.getElementById("myBtnpause4").addEventListener("click",function(){
+                          document.getElementById("Song5").pause();
+                          }
+                          );
+                         </script>
+                        </td>
+
+                      </tr>
+                      
+                      <tr class="song">
+                          <td class="nr">6</td>
+                          <td class="title">Look after you</td>
+                          <td class="length">4:27</td>
+                          <td> </td>
+                          <td>
+                            <audio 
+                             src="Audio/The-Fray.-Look-after-you.mp3"  id="Song6">
+                            </audio>
+                          </td>
+                          <td> 
+                             <button id="myBtnplay4"><span><i class="fa fa-play fa-1x" style="color:rgb(71,7, 7)"></i></span></button>
+                           <script>  document.getElementById("myBtnplay4").addEventListener("click",function(){
+                           document.getElementById("Song6").play();
+                           }
+                           );
+                          </script> 
+                          </td>
+                          <td>
+                          <button id="myBtnpause5"><span><i class="fa fa-pause fa-1x" style="color:rgb(71, 7, 7)"></i></span></button>
+                          <script>  document.getElementById("myBtnpause5").addEventListener("click",function(){
+                          document.getElementById("Song6").pause();
+                          }
+                          );
+                         </script>
+                        </td>
+                      </tr>
+                      
+                      <tr class="song">
+                          <td class="nr">7</td>
+                          <td class="title">Iris</td>
+                          <td class="length">4:43</td>
+                          <td> </td>
+                          <td>
+                            <audio 
+                             src="Audio/Goo_Goo_Dolls_-_Iris.mp3"  id="Song7">
+                            </audio>
+                          </td>
+                          <td> 
+                             <button id="myBtnplay6"><span><i class="fa fa-play fa-1x" style="color:rgb(71,7, 7)"></i></span></button>
+                           <script>  document.getElementById("myBtnplay6").addEventListener("click",function(){
+                           document.getElementById("Song7").play();
+                           }
+                           );
+                          </script> 
+                          </td>
+                          <td>
+                          <button id="myBtnpause7"><span><i class="fa fa-pause fa-1x" style="color:rgb(71, 7, 7)"></i></span></button>
+                          <script>  document.getElementById("myBtnpause7").addEventListener("click",function(){
+                          document.getElementById("Song7").pause();
+                          }
+                          );
+                         </script>
+                        </td>
+                      </tr>
+                      
+                      <tr class="song">
+                          <td class="nr">8</td>
+                          <td class="title">She is</td>
+                          <td class="length">4:03</td>
+                          <td> </td>
+                          <td>
+                            <audio 
+                             src="Audio/The-Fray-She-is.mp3"  id="Song8">
+                            </audio>
+                          </td>
+                          <td> 
+                             <button id="myBtnplay7"><span><i class="fa fa-play fa-1x" style="color:rgb(71,7, 7)"></i></span></button>
+                           <script>  document.getElementById("myBtnplay7").addEventListener("click",function(){
+                           document.getElementById("Song8").play();
+                           }
+                           );
+                          </script> 
+                          </td>
+                          <td>
+                          <button id="myBtnpause8"><span><i class="fa fa-pause fa-1x" style="color:rgb(71, 7, 7)"></i></span></button>
+                          <script>  document.getElementById("myBtnpause8").addEventListener("click",function(){
+                          document.getElementById("Song8").pause();
+                          }
+                          );
+                         </script>
+                        </td>
+                      </tr>
+                      
+                      <tr class="song">
+                          <td class="nr">9</td>
+                          <td class="title">Ghost of you</td>
+                          <td class="length">3:17</td>
+                            <td> </td>
+                            <td>
+                              <audio 
+                               src="Audio/X2Download.app%20-%205%20Seconds%20Of%20Summer%20-%20Ghost%20Of%20You%20(Lyrics)%20(128%20kbps).mp3"  id="Song10">
+                              </audio>
+                            </td>
+                            <td> 
+                               <button id="myBtnplay9"><span><i class="fa fa-play fa-1x" style="color:rgb(71,7, 7)"></i></span></button>
+                             <script>  document.getElementById("myBtnplay9").addEventListener("click",function(){
+                             document.getElementById("Song10").play();
+                             }
+                             );
+                            </script> 
+                            </td>
+                            <td>
+                            <button id="myBtnpause10"><span><i class="fa fa-pause fa-1x" style="color:rgb(71, 7, 7)"></i></span></button>
+                            <script>  document.getElementById("myBtnpause10").addEventListener("click",function(){
+                            document.getElementById("Song10").pause();
+                            }
+                            );
+                           </script>
+                          </td>
+                        </tr>
+
+                        <tr class="song">
+                          <td class="nr">10</td>
+                          <td class="title">Ride</td>
+                          <td class="length">3:13</td>
+                            <td> </td>
+                            <td>
+                              <audio 
+                               src="Audio/Ride.mp3"  id="Song11">
+                              </audio>
+                            </td>
+                            <td> 
+                               <button id="myBtnplay10"><span><i class="fa fa-play fa-1x" style="color:rgb(71,7, 7)"></i></span></button>
+                             <script>  document.getElementById("myBtnplay10").addEventListener("click",function(){
+                             document.getElementById("Song11").play();
+                             }
+                             );
+                            </script> 
+                            </td>
+                            <td>
+                            <button id="myBtnpause11"><span><i class="fa fa-pause fa-1x" style="color:rgb(71, 7, 7)"></i></span></button>
+                            <script>  document.getElementById("myBtnpause11").addEventListener("click",function(){
+                            document.getElementById("Song11").pause();
+                            }
+                            );
+                           </script>
+                          </td>
+                        </tr>
+
+                        <tr class="song">
+                          <td class="nr">11</td>
+                          <td class="title">How to save a life</td>
+                          <td class="length">4:27</td>
+                            <td> </td>
+                            <td>
+                              <audio 
+                               src="Audio/240279-47245272-d232-42b4-bf5a-8e48aee7d142.mp3"  id="Song12">
+                              </audio>
+                            </td>
+                            <td> 
+                               <button id="myBtnplay11"><span><i class="fa fa-play fa-1x" style="color:rgb(71,7, 7)"></i></span></button>
+                             <script>  document.getElementById("myBtnplay11").addEventListener("click",function(){
+                             document.getElementById("Song12").play();
+                             }
+                             );
+                            </script> 
+                            </td>
+                            <td>
+                            <button id="myBtnpause12"><span><i class="fa fa-pause fa-1x" style="color:rgb(71, 7, 7)"></i></span></button>
+                            <script>  document.getElementById("myBtnpause12").addEventListener("click",function(){
+                            document.getElementById("Song12").pause();
+                            }
+                            );
+                           </script>
+                          </td>
+                        </tr>
+                        
+                        <tr class="song">
+                          <td class="nr">12</td>
+                          <td class="title">Mind Over Matter</td>
+                          <td class="length">3:50</td>
+                            <td> </td>
+                            <td>
+                              <audio 
+                               src="Audio/mindovermatter.mp3"  id="Song13">
+                              </audio>
+                            </td>
+                            <td> 
+                               <button id="myBtnplay12"><span><i class="fa fa-play fa-1x" style="color:rgb(71,7, 7)"></i></span></button>
+                             <script>  document.getElementById("myBtnplay12").addEventListener("click",function(){
+                             document.getElementById("Song13").play();
+                             }
+                             );
+                            </script> 
+                            </td>
+                            <td>
+                            <button id="myBtnpause13"><span><i class="fa fa-pause fa-1x" style="color:rgb(71, 7, 7)"></i></span></button>
+                            <script>  document.getElementById("myBtnpause13").addEventListener("click",function(){
+                            document.getElementById("Song13").pause();
+                            }
+                            );
+                           </script>
+                          </td>
+                        </tr>
+
+                        <tr class="song">
+                          <td class="nr">13</td>
+                          <td class="title">Happy</td>
+                          <td class="length">4:06</td>
+                            <td> </td>
+                            <td>
+                              <audio 
+                               src="Audio/happy.mp3"  id="Song13">
+                              </audio>
+                            </td>
+                            <td> 
+                               <button id="myBtnplay13"><span><i class="fa fa-play fa-1x" style="color:rgb(71,7, 7)"></i></span></button>
+                             <script>  document.getElementById("myBtnplay13").addEventListener("click",function(){
+                             document.getElementById("Song14").play();
+                             }
+                             );
+                            </script> 
+                            </td>
+                            <td>
+                            <button id="myBtnpause14"><span><i class="fa fa-pause fa-1x" style="color:rgb(71, 7, 7)"></i></span></button>
+                            <script>  document.getElementById("myBtnpause14").addEventListener("click",function(){
+                            document.getElementById("Song14").pause();
+                            }
+                            );
+                           </script>
+                          </td>
+                        </tr>
+
+                        <tr class="song">
+                          <td class="nr">14</td>
+                          <td class="title">Even in the dark</td>
+                          <td class="length">2:40</td>
+                            <td> </td>
+                            <td>
+                              <audio 
+                               src="Audio/eind.mp3"  id="Song13">
+                              </audio>
+                            </td>
+                            <td> 
+                               <button id="myBtnplay14"><span><i class="fa fa-play fa-1x" style="color:rgb(71,7, 7)"></i></span></button>
+                             <script>  document.getElementById("myBtnplay14").addEventListener("click",function(){
+                             document.getElementById("Song15").play();
+                             }
+                             );
+                            </script> 
+                            </td>
+                            <td>
+                            <button id="myBtnpause15"><span><i class="fa fa-pause fa-1x" style="color:rgb(71, 7, 7)"></i></span></button>
+                            <script>  document.getElementById("myBtnpause15").addEventListener("click",function(){
+                            document.getElementById("Song15").pause();
+                            }
+                            );
+                           </script>
+                          </td>
+                        </tr>
+                      
+                        <tr class="song">
+                          <td class="nr">14</td>
+                          <td class="title">What do you want from me</td>
+                          <td class="length">3:45</td>
+                            <td> </td>
+                            <td>
+                              <audio 
+                               src="Audio/wdywfm.mp3"  id="Song13">
+                              </audio>
+                            </td>
+                            <td> 
+                               <button id="myBtnplay15"><span><i class="fa fa-play fa-1x" style="color:rgb(71,7, 7)"></i></span></button>
+                             <script>  document.getElementById("myBtnplay15").addEventListener("click",function(){
+                             document.getElementById("Song16").play();
+                             }
+                             );
+                            </script> 
+                            </td>
+                            <td>
+                            <button id="myBtnpause16"><span><i class="fa fa-pause fa-1x" style="color:rgb(71, 7, 7)"></i></span></button>
+                            <script>  document.getElementById("myBtnpause16").addEventListener("click",function(){
+                            document.getElementById("Song16").pause();
+                            }
+                            );
+                           </script>
+                          </td>
+                        </tr>
+
+
+
+                    </tbody>
+                  </table>
+                
+
+                  <div class="shadow"></div>
+                  
+                  <div class="bar"></div>
+                  
+                  <div class="info">
+                      <h4>Our songs</h4>
+                      <h5>Click on upper left button for dropdown</h5>
+
+                  </div>
+      
+                  
+                  
+    
+                  
+              
+          </article>
+          
+</html>

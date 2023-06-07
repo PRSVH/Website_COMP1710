@@ -1,0 +1,81 @@
+footer{
+  bottom:10px;
+  color: brown;
+  text-align: left;
+}
+
+p.indent {
+    margin-left: 6em;
+}
+
+
+h6{
+  margin: 0;
+    padding: 0;
+    font-size: 30px;
+    line-height: 5px;
+    letter-spacing: 2.5px;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    color: #20212e;
+    text-align: center;
+}
+
+
+h2,h3,h4,h5 {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    line-height: 5px;
+    letter-spacing: 2.5px;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    color: #20212e;
+  }
+  a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: blueviolet;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+  
+  .fa:hover {
+    opacity: 0.5;
+}
+
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+
+  .fa-reddit {
+    background: #ff5700;
+    color: white;
+  }

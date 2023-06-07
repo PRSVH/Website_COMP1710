@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-au">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitemap</title>
+    <link rel="default stylesheet" href="sitemap.css" title="default">
+	<link href="altcss.css" rel="alternate stylesheet" title="alternate">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="/scripts/styleswitcher.js"></script>
+
+</head>
+
+	<body>
+
+
+		<script>
+
+			var style_cookie_name = "style" ;
+			var style_cookie_duration = 30 ;
+			var style_domain = "thesitewizard.com" ;
+
+			function switch_style ( css_title )
+				{
+			// You may use this script on your site free of charge provided
+			// you do not remove this notice or the URL below. Script from
+			// https://www.thesitewizard.com/javascripts/change-style-sheets.shtml
+			var i, link_tag ;
+			for (i = 0, link_tag = document.getElementsByTagName("link") ;
+				 i < link_tag.length ; i++ ) {
+					if ((link_tag[i].rel.indexOf( "stylesheet" ) != -1) &&
+						link_tag[i].title) {
+							 link_tag[i].disabled = true ;
+					if (link_tag[i].title == css_title) {
+						link_tag[i].disabled = false ;
+					 }
+			}
+			set_cookie( style_cookie_name, css_title,
+			style_cookie_duration, style_domain );
+			}
+			}
+			function set_style_from_cookie()
+			{
+				var css_title = get_cookie( style_cookie_name );
+				if (css_title.length) {
+					switch_style( css_title );
+				}
+			}
+			function set_cookie ( cookie_name, cookie_value,
+				lifespan_in_days, valid_domain )
+			{
+				// https://www.thesitewizard.com/javascripts/cookies.shtml
+				var domain_string = valid_domain ?
+				   ("; domain=" + valid_domain) : '' ;
+					document.cookie = cookie_name +
+				   "=" + encodeURIComponent( cookie_value ) +
+				   "; max-age=" + 60 * 60 *
+				   24 * lifespan_in_days +
+				   "; path=/" + domain_string ;
+				}
+			function get_cookie ( cookie_name )
+			{
+			// https://www.thesitewizard.com/javascripts/cookies.shtml
+			var cookie_string = document.cookie ;
+			if (cookie_string.length != 0) {
+			var cookie_array = cookie_string.split( '; ' );
+			for (i = 0 ; i < cookie_array.length ; i++) {
+				cookie_value = cookie_array[i].match ( cookie_name + '=(.*)' );
+				if (cookie_value != null) {
+			return decodeURIComponent ( cookie_value[1] ) ;
+			}
+		}
+	}
+	return '' ;
+	}
+
+	</script>
+
+        <button type="button" onclick="switch_style('default');return false;" name="theme" value="Default" id="defaultcss">Default</button>
+        <button type="button" onclick="switch_style('alternate');return false;" name="theme" value="alternate" id="alternatecss">Alternate</button>
+
+
+        <h6> What passes Time when stuck | Sitemap</h6>
+        
+		
+			<!-- the Navigation Bar -->
+	  		<div id="topNavigationBar">
+	  			<ul>
+	  				<li><a href="index.html">Index</a> </li>
+	  				<li><a href="lonelynotlonely.html">Main page of website </a> </li>
+	  				<li><a href="sitemap1.html">Map</a></li>
+	  				<li><a href="MoviesGallery.css">Go here for Movies and a photo gallery</a> </li>
+	  				<li><a href="me.html">About me</a> </li>
+	  			</ul>
+	  		</div>
+	  	
+		
+		<div id="content">
+
+		<!-- list of all the links within my website-->
+		<h3> Accessible from main webpage</h3>
+        <p><a href="lonelynotlonely.html">Main webpage</a></p>
+		<ul>
+			<li><a href="me.html">About me</a> </li>
+			<li><a href="Music.html">Music</a> </li>
+			<li><a href="MoviesGallery.html">Movies and Gallery</a></li>
+			<li><a href="feedback.html">Feedback</a> </li>
+			
+		</ul>
+	<h3> Accessible from Movies and Galley </h3>
+	<ul>
+		<li><a href="MoviesGallery.html">Movies and Photos</a> </li>
+		<li><a href="PhotoGallery.html">Gallery</a> </li>
+		<li><a href="Movies.html">Movies but this isn't constructed yet</a></li>
+	</ul>
+
+    <h3> Others </h3>
+	<ul>
+		<li><a href="sourcelog.html">Media Used</a> </li>
+		<li><a href="Index.html">Index</a> </li>
+		<li><a href="assignment.html">Assignment Page</a></li>
+	</ul>
+	
+  </div>
+
+
+	<div id="bottomInfo">
+		<div id="bottomInfoContent">
+			
+			
+			<a href="https://www.instagram.com/h242322/?hl=en" class="fa fa-instagram"></a>
+			
+			<a href="https://www.reddit.com/user/PSv26" class="fa fa-reddit"></a>
+            
+	</div>
+	</div>
+    <footer>
+        <a href="feedback.html" target="_blank">Feedback</a>
+        <a href="sourcelog.html" target="_blank">Sources</a>
+        <a href="sitemap.html" target="_blank">Sitemap</a>
+    </footer>
+	
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,367 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+
+body {
+  background:rgb(78, 30, 13);
+  padding: 0;
+  margin: 0;
+}
+
+
+.screen {
+  background-color: #320202;
+  padding: 0;
+  height: 650px;
+  width: 366px;
+  position: absolute;
+  left: 50%;
+	top: 0;
+	transform: translate(-50%, 0);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  margin: 30px 0;
+}
+
+
+h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  line-height: 10px;
+  letter-spacing: 2.5px;
+  font-family: 'Open Sans';
+  font-weight: 700;
+  color: #fff;
+}
+
+h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 11px;
+  line-height: 11px;
+  font-family: 'fantasy';
+  font-weight: 400;
+  color: #777;
+}
+
+h4 {
+  margin: 0 0 5px 29px;
+  padding: 0;
+  font-size: 14px;
+  line-height: 14px;
+  font-family: 'fantasy';
+  font-weight: 700;
+  color: #fff;
+}
+
+
+
+.header {
+  display: inline-flex;
+  margin: 0 0 40px 0;
+}
+
+input[type=checkbox] {
+  visibility: hidden;
+  margin: 0;
+  padding: 0;
+  z-index: 10;
+}
+
+label.main:before {
+  position: absolute;
+  top: 23px;
+  left: 23px;
+  font-family: FontAwesome;
+  content: '\f0c9';
+  color: #959595;
+  font-size: 16px;
+  line-height: 16px;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.3s ease-in;
+}
+
+label.main:hover:before {
+  color: #bbb;
+}
+
+.screen > #magicButton:checked ~ label.main:before {
+  color: #ff564c;
+  transition: all 0.3s ease-in;
+}
+
+.coverImage {
+  background: url('https://techiemore.com/wp-content/uploads/2022/09/Red-Blurred-Aesthetic-Sad-Playlist-Cover.jpg');
+  background-size: cover;
+  width: 566px;
+  height: 566px;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: 0% 0%;
+  transition: all 0.3s ease-in;
+}
+
+.screen > #magicButton:checked ~ .coverImage {
+  transform: scale(0.251, 0.251);
+  left: 23px;
+  top: 60px;
+  transition: all 0.3s ease-in;
+  border-radius: 20px;
+}
+
+.search:before {
+  position: absolute;
+  top: 23px;
+  right: 23px;
+  font-family: FontAwesome;
+  content: '\f002';
+  color: #959595;
+  font-size: 16px;
+  line-height: 16px;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.3s ease-in;
+}
+
+.search:hover:before {
+  color: #bbb;
+}
+
+.bodyPlayer {
+  position: absolute;
+  top: 500px;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  height: 286px;
+  width: 366px;
+  background: #111;
+  transition: all 0.3s ease-in;
+}
+
+.screen > #magicButton:checked ~ .bodyPlayer {
+  height: 200px;
+  left: 0;
+  top: 180px;
+  transition: all 0.3s ease-in;
+}
+
+.list {
+  border-spacing: 0px 2px;
+  width: 342px;
+  height: 200px;
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 370px;
+  left: 12px;
+  transform-origin: 0% 0%;
+  transform: scale(0.1, 0.1);
+  transition: all 0.3s ease-in;
+  overflow-y: scroll;
+ 
+}
+
+
+.nr{
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  line-height: 13px;
+  font-family: 'fantasy';
+  font-weight: 700;
+  color: #6d6d6d;
+}
+
+.tbody{
+  height: 400px;
+  overflow-y: scroll;
+}
+
+.list tr {
+  transform-origin: 0% 50%;
+  height: 26px;
+  text-align: center;
+  background: #1d1d1d;
+  text-indent: 8px;
+  overflow-y: scroll;
+}
+
+.list tr:hover {
+  background: #222;
+  cursor: pointer;
+}
+
+.title {
+  width: 215px;
+  text-align: left;
+  text-indent: 15px;
+  transition: all 0.11s ease-in;
+
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  line-height: 13px;
+  font-family: 'fantasy';
+  font-weight: 700;
+  color: #f0f0f0;
+}
+
+.length{
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  line-height: 13px;
+  font-family: 'fantasy';
+  font-weight: 700;
+  color: #6d6d6d;
+}
+
+.list tr:hover .title {
+  padding-left: 5px;
+  width: 210px;
+  transition: all 0.11s ease-in;
+}
+
+.screen > #magicButton:checked ~ .list {
+  top: 192px;
+  left: 12px;
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1, 1);
+  transition: all 0.3s ease-in;
+  overflow-y: scroll;
+
+}
+
+
+
+
+
+.bar {
+  background: url('http://imgh.us/bar_3.svg') no-repeat;
+  background-size: 100%;
+  width: 320px;
+  height: 21px;
+  position: absolute;
+  top: 407px;
+  left: 23px;
+  transform-origin: 0% 0%;
+  transition: all 0.3s ease-in;
+}
+
+.screen > #magicButton:checked ~ .bar {
+  top: 119px;
+  left: 126px;
+  transform: scale(0.6875, 0.6875);
+  transition: all 0.3s ease-in;
+}
+
+.info {
+  width: 157px;
+  position: absolute;
+  left: 104px;
+  top: 540px;
+  transition: all 0.3s ease-in;
+}
+
+.screen > #magicButton:checked ~ .info {
+  top: 66px;
+  left: 200px;
+  text-align: left;
+  transition: all 0.3s ease-in;
+}
+
+.screen > #magicButton:checked ~ .info h4 {
+  margin-left: 25px;
+  text-align: center;
+  font-size: 16px;
+  color: #c4c1c1;
+  transition: all 0.3s ease-in;
+}
+.screen > #magicButton:checked ~ .info h5 {
+  margin-left: 200px;
+  text-align: center;
+  font-size: 10px;
+  color: #7c7777;
+  transition: all 0.3s ease-in;
+}
+
+
+
+
+
+.shadow {
+  background: rgba(17, 17, 17, 0.8);
+  width: 366px;
+  height: 50px;
+  position: absolute;
+  bottom: -12px;
+  left: 0;
+  box-shadow: 0px -15px 40px rgba(17, 17, 17, 0.8);
+}
+
+.footer {
+  background: none;
+  font-family: FontAwesome;
+  color: #6d6d6d;
+  font-size: 15px;
+  line-height: 15px;
+  height: 45px;
+  width: 360px;
+  position: absolute;
+  bottom: 10px;
+  left: 23px;
+  z-index: 20;
+  transition: all 0.15s linear;
+  transition: bottom 0.3s linear;
+}
+
+
+
+.shuffle:before {
+  content: "\f074";
+  cursor: pointer;
+  transition: all 0.15s linear;
+}
+
+.repeat:before {
+  content: "\f01e";
+  cursor: pointer;
+  transition: all 0.15s linear;
+}
+
+.options:before {
+  content: "\f141";
+  cursor: pointer;
+  transition: all 0.15s linear;
+}
+
+.love:hover:before {
+  color: #bbb;
+  transition: all 0.15s linear;
+}
+
+.shuffle:hover:before {
+  color: #bbb;
+  transition: all 0.15s linear;
+}
+
+.repeat:hover:before {
+  color: #bbb;
+  transition: all 0.15s linear;
+}
+
+.options:hover:before {
+  color: #bbb;
+  transition: all 0.15s linear;
+}
+
+
+audio {
+  visibility: hidden;
+}
+
